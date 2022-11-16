@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        body{
+            background: linear-gradient(red,blue);
+        }
+        .x
+        {
+            border-top: 12px solid yellow;
+            border-bottom: 12px solid transparent;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            margin: auto;
+            border-radius: 50%;
+            margin-top: 150px;
+            width: 400px;
+            height:400px ;
+            padding: 15px;
+            animation: preloader linear infinite 2s;
+        }
+    
+    .y
+    {
+        border-top: 12px solid green;
+        border-bottom: 12px transparent solid;
+        border-left: 12px transparent solid;
+        border-right: 12px transparent solid;
+        margin: auto;
+        border-radius: 50%;
+        height:300px ;
+        width: 300px;
+        animation: preloader linear infinite 3s;
+        padding: 15px;
+    }
+
+.z
+{
+    border-top: 12px solid blue;
+    border-bottom: 12px transparent solid;
+    border-left: 12px transparent solid;
+    border-right: 12px transparent solid;
+    margin: auto;
+    border-radius: 50%;
+    height:200px ;
+    width: 200px;
+    animation: preloader linear infinite 4s;
+    padding: 15px;
+}
+.a
+{
+    border-top: 12px solid red;
+    border-bottom: 12px transparent solid;
+    border-left: 12px transparent solid;
+    border-right: 12px transparent solid;
+    margin: auto;
+    border-radius: 50%;
+    width: 150px;
+    height:150px ;
+    animation: preloader linear infinite 5s;
+    padding: 15px;
+}
+@keyframes preloader {
+   from{transform: rotate(0deg);}
+    to{transform:rotate(360deg);}
+}
+    </style>
+</head>
+<body>
+    <div class="x">
+        <div class="y">
+            <div class="z">
+                <div class="a"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

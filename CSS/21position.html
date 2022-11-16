@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        ul{
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            position: fixed;
+        }
+        li{
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px;
+            color: white;
+        }
+        li:hover{
+            background-color: aqua;
+        }
+        .one{
+            height: 400px;
+            width: 400px;
+            background-color: aqua;
+            position: relative;
+        }
+        .two
+        {
+            height: 200px;
+            width: 200px;
+            background-color: blueviolet;
+            position: absolute;
+            left: 100px;
+            top:100px;
+        }
+        .three{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            left: 50px;
+            position: absolute;
+            top:50px;
+        }
+        .first
+        {
+            position: relative;
+            <!-- height: 500px; -->
+        
+        }
+        .second
+        {
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            bottom: 30px;
+            left: 300px;
+            
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Home</li>
+        <li>Services</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+    <br><br><br>
+    <div class="one">
+        <div class="two">
+            <div class="three"></div>
+        </div>
+    </div>
+
+    <br>
+    <div class="main">
+        <img src="img/nature.jpg" alt="" class="first">
+        <img src="img/baby.jpg" alt="" class="second">
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 30px;
+            width: 100px;
+            border: 1px solid transparent;
+            box-shadow: 0 0 10px black inset,2px 2px 5px blue,-2px -2px 5px inset white ,-4px -4px 5px purple inset;
+            border-radius: 30px;
+            margin: auto;
+            text-align: center;
+            line-height: 30px;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        div::after
+        {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 50px;
+            width: 150px;
+            background: linear-gradient(red,blue);
+
+            transform: translate(-100%,0%);
+            transition: 1s;
+            z-index: 2;
+        }
+        div:hover::after
+        {
+            transform: translate(0%,0%);
+        }
+
+    </style>
+</head>
+<body>
+    <div>Hover me</div>
+</body>
+</html>

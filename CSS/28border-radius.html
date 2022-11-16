@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .two
+        {
+            height: 50px;
+            width: 150px;
+            border: 3px solid;
+            text-align: center;
+            box-sizing: border-box;padding-top: 10px;
+            border-radius: 20px;
+        }
+        .one
+        {
+            height: 50px;
+            width: 150px;
+            border: 3px solid;
+            text-align: center;
+            box-sizing: border-box;padding-top: 10px;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .one:hover{
+            border-top-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            border-bottom-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="two">Hello Tops</div>
+    <br>
+    <div class="one">Hello Tops</div>
+</body>
+</html>

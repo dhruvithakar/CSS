@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one
+        {
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            animation-name: demo;
+            animation-duration: 5s;
+           /*animation-delay: 2s;*/
+            animation-iteration-count: infinite;
+            /*animation-direction: reverse;*/
+            animation-direction: alternate;
+            position: relative;
+        }
+        @keyframes demo {
+            /*from{background-color: aqua;}
+            to{background-color: blueviolet;}*/
+            0%{background-color: coral;top:0;left:0;}
+            25%{background-color: aqua;top:0;left: 300px;}
+            50%{background-color: blue;top:300px;left:300px}
+            75%{background-color: blueviolet;top:300px;left:0px}
+            100%{background-color: chartreuse;top:0px;left: 0px;}
+          
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+</body>
+</html>
